@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gallery popup </title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intense-images/1.0.7/intense.min.js
+
+
+
+"></script>
+<style>
+*{
+  box-sizing : border-box ;
+}
+html,body{
+  font-family: tahoma ;
+  margin: 0px ;
+  hight: 100%
+  width: 100% 
+}
+body{
+  padding: 20px ;
+  text-align: center ;
+  min-width: 700px ;
+
+}
+
+.demos{
+  text-align: center ;
+  margin-top: 20px ;
+
+}
+
+.demo-img{
+  display: inline-block ;
+  width: 290px ;
+  height: 290px ;
+  background-size: cover;
+  background-position: 50% 50% ;
+  margin-left: 8px ;
+  margin-right: 8px ;
+  margin-bottom: 17px ;
+
+}
+
+.demo-img.first{
+  background-image: url(img1.jpg);
+  border: 7px ;
+  solid:  white ;
+
+}
+
+.demo-img.secound{
+  background-image: url(img2.jpg);
+  background-position: 50% 50% ;
+  border: 7px ;
+  solid:  white ;
+
+}
+
+.demo-img.third{
+  background-image: url(img3.jpg);
+ 
+  border: 7px ;
+  solid:  white ;
+
+}
+section{
+  margin-top: 200px ;
+
+}
+</style>
+
+
+</head>
+<body>
+<section class="demos">
+ <div class="demo-img first" data-image="img1.jpg">
+ </div>
+ <div class="demo-img secound" data-image="img2.jpg">
+ </div>
+  <div class="demo-img third" data-image="img3.jpg">
+ </div>
+
+</section>
+<script type="text/javascript">
+var element = document.querySelectorAll('.demo-img') ;
+intense (element) ;
+
+
+</script>
+</body>
+</html>
